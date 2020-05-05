@@ -1,0 +1,27 @@
+## Lesson1
+
+- [ ] Add link to webpage for coursev4 in line 2
+- [ ] Change youtube link of video in line 2
+- [ ] Change youtube link in line 4 to (0:01)
+- [ ] Change youtube link in line 7 to (0:42)
+- [ ] Change link to fastaiv2 website in line 8
+- [ ] Change youtube link in line 12 to (3:28)
+- [ ] Change youtube link in line 21 to (6:32)
+- [ ] Change youtube link in line 27 to (8:39)
+- [ ] Change youtube link in line 33 to (9:53)
+- [ ] Change youtube link in line 51 to (19:00)
+- [ ] Change youtube link in line 63 to (23:07)
+- [ ] Add link to course website for platforms in line 79
+- [ ] Change youtube link in line 85 to (31:26)
+- [ ] Change youtube link in line 149 to (42:17)
+- [ ] Change youtube link in line 160 to (45:25)
+- [ ] Change youtube link in line 189 to (47:59)
+- [ ] Change youtube link in line 215 to (53:44)
+- [ ] Change youtube link in line 241 to (1:04:13)
+- [ ] Change youtube link in line 297 to (1:12:30)
+- [ ] Change youtube link in line 314 to (1:6:08)
+- [ ] Change code block (fastai2 -> fastai) in Line 243
+- [ ] Change code block (fastai2 -> fastai) in Line 337
+- [ ] Change code block (fastai2 -> fastai) in Line 153
+- [ ] Change code block (fastai2 -> fastai) in Line 369
+- [ ] Check dataset page link inLine 278
