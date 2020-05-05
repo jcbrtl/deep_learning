@@ -16,7 +16,8 @@
 - TODO
 
 ## TODO
-* TODO
+- [ ] Copy personal notes
+- [ ] Sort content in TODO folder
 
 ## Repository Structure
 This repository is built using [nbdev](https://nbdev.fast.ai/). The library folder is `dl` nothing important will be done here. Also, the notebooks folder is `deep_learning/nbs`.
@@ -42,11 +43,12 @@ This repository is built using [nbdev](https://nbdev.fast.ai/). The library fold
         2. [Waste Seggregation using trashnet](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/projects/Waste%20Seggregation%20using%20trashnet) -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
     
     4. [paper_implementations](https://github.com/KushajveerSingh/SPADE-PyTorch)-
-        1. Implementation of Semantic Image Synthesis with Spatially-Adaptive Normalization (SPADE) [link](https://arxiv.org/abs/1903.07291)
+        1. [Photorealistic Style Transfer](https://github.com/KushajveerSingh/Photorealistic-Style-Transfer/tree/6c9c90fa9610117b8ad85aaec801ca1b020421c2) - Implementation of **High Resolution Network for Photorealistic Style Transfer** [link](https://arxiv.org/abs/1904.11617)
+        2. [SPADE-PyTorch](https://github.com/KushajveerSingh/SPADE-PyTorch/tree/8e367f9015122c627d95f3fa339182dd4a47715f) - Implementation of **Semantic Image Synthesis with Spatially-Adaptive Normalization (SPADE)** [link](https://arxiv.org/abs/1903.07291)
     
     5. [random](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random) - Random scripts and os setup instructions.
-        1. os_setup_iinstructions -> guide to setup Windows10 pro and Ubuntu 20.04 LTS on my laptop according to my preferences
-        2. cifar10_data_script.py -> to convert CIFAR10 to numpy array
-        3. save_torchvision_models_to_disk -> a quick script to download all pytorch models
+        1. [os_setup_iinstructions](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random/os_setup_instructions) -> guide to setup Windows10 pro and Ubuntu 20.04 LTS on my laptop according to my preferences
+        2. [cifar10_data_script.py](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/random/cifar10_data_script.py) -> to convert CIFAR10 to numpy array
+        3. [save_torchvision_models_to_disk](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/random/Save%20torchvision%20models%20to%20disk.ipynb) -> a quick script to download all pytorch models
         
 2. [c++](https://github.com/KushajveerSingh/deep_learning/tree/master/c%2B%2B) folder - Check the [README.md](https://github.com/KushajveerSingh/deep_learning/tree/master/c%2B%2B/README.md) of this folder for more details. It is practice of data structures and algorithms using c++ in my free time.
