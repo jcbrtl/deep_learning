@@ -10,6 +10,7 @@
 * Created the repo
 * Migrated notes repo
 * Migrated c++ repo
+* Merge SPADE, Style transfer repo
 
 ## In-Progress
 - TODO
@@ -37,12 +38,15 @@ This repository is built using [nbdev](https://nbdev.fast.ai/). The library fold
         2. Personal notes
     
     3. [projects](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/projects) - Paper implementations are not included in this folder.
-        - Semi-supervised parking lot detection -> my submission for Techgig Code Gladiators 2019 AI theme final.
-        - Waste Seggregation using trashnet -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
+        1. [Semi-supervised parking lot detection](https://github.com/KushajveerSingh/Unsupervised-Parking-Lot-Detection/tree/00309fecf2acf29e5ad81ead8f595b06c7c1208d) -> my submission for Techgig Code Gladiators 2019 AI theme final.
+        2. [Waste Seggregation using trashnet](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/projects/Waste%20Seggregation%20using%20trashnet) -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
     
-    4. [random](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random) - Random scripts and os setup instructions.
-        - os_setup_iinstructions -> guide to setup Windows10 pro and Ubuntu 20.04 LTS on my laptop according to my preferences
-        - cifar10_data_script.py -> to convert CIFAR10 to numpy array
-        - save_torchvision_models_to_disk -> a quick script to download all pytorch models
+    4. [paper_implementations](https://github.com/KushajveerSingh/SPADE-PyTorch)-
+        1. Implementation of Semantic Image Synthesis with Spatially-Adaptive Normalization (SPADE) [link](https://arxiv.org/abs/1903.07291)
+    
+    5. [random](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random) - Random scripts and os setup instructions.
+        1. os_setup_iinstructions -> guide to setup Windows10 pro and Ubuntu 20.04 LTS on my laptop according to my preferences
+        2. cifar10_data_script.py -> to convert CIFAR10 to numpy array
+        3. save_torchvision_models_to_disk -> a quick script to download all pytorch models
         
 2. [c++](https://github.com/KushajveerSingh/deep_learning/tree/master/c%2B%2B) folder - Check the [README.md](https://github.com/KushajveerSingh/deep_learning/tree/master/c%2B%2B/README.md) of this folder for more details. It is practice of data structures and algorithms using c++ in my free time.
