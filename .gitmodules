@@ -1,0 +1,3 @@
+[submodule "deep_learning/projects/Unsupervised-Parking-Lot-Detection"]
+	path = deep_learning/projects/Unsupervised-Parking-Lot-Detection
+	url = git@github.com:KushajveerSingh/Unsupervised-Parking-Lot-Detection.git
