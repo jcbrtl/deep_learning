@@ -18,6 +18,7 @@
 ## TODO
 - [ ] Copy personal notes
 - [ ] Sort content in TODO folder
+- [ ] Add documentation for unscramble game
 
 ## Repository Structure
 This repository is built using [nbdev](https://nbdev.fast.ai/). The library folder is `dl` nothing important will be done here. Also, the notebooks folder is `deep_learning/nbs`.
@@ -50,5 +51,6 @@ This repository is built using [nbdev](https://nbdev.fast.ai/). The library fold
         1. [os_setup_iinstructions](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random/os_setup_instructions) -> guide to setup Windows10 pro and Ubuntu 20.04 LTS on my laptop according to my preferences
         2. [cifar10_data_script.py](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/random/cifar10_data_script.py) -> to convert CIFAR10 to numpy array
         3. [save_torchvision_models_to_disk](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/random/Save%20torchvision%20models%20to%20disk.ipynb) -> a quick script to download all pytorch models
+        4. [unscramble_android_game](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random/unscramble_android_game) -> Python script to solve the unscramble android game. Complexity is exponential to generate all the substrings, and a dictionary is used to check for valid words.
         
 2. [c++](https://github.com/KushajveerSingh/deep_learning/tree/master/c%2B%2B) folder - Check the [README.md](https://github.com/KushajveerSingh/deep_learning/tree/master/c%2B%2B/README.md) of this folder for more details. It is practice of data structures and algorithms using c++ in my free time.
