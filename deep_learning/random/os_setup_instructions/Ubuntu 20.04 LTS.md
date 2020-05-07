@@ -98,6 +98,7 @@
     - ![](images/8.png)
     - ![](images/9.png)
     - ![](images/10.png)
+    - ![](images/11.png)
 9. Customize NVIDIA X Server Settings
 10. Setup Github SSH
     1. Check for existing keys (id_rsa.pub, id_ecdsa.pub, id_ed25519.pub)
