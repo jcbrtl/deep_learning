@@ -35,6 +35,8 @@
         - Keyboard & Mouse -> Additional Layout Options -> Caps Lock behavior -> Swap ESC and Caps Lock
     - `sudo apt install ubuntu-restricted-extras`
     - `sudo apt install tree`
+    - Disable emoji input i.e. Ctrl+Shift+E
+        - `ibus-setup` then under Emoji tab disable that shortcut
 5. Download following software
     - Download **Google chrome**
         - `wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -`
@@ -66,8 +68,6 @@
         - `./configure`
         - `make`
         - `sudo make install`
-    - Download **Flameshot**
-        - `sudo apt install flameshot`
     - Download VLC
         - `sudo snap install vlc`
     - Download **textlive**
