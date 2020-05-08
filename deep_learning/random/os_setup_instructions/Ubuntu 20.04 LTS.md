@@ -163,6 +163,8 @@
     - `python3 -m pip install https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master`
     - `jupyter contrib nbextension install --user`
     - Add extensions (Nbextensions edit menu item, spellchecker, ExecuteTime, jupyter-js-widgets, contrib_nbextensions_help_item, jupyter_server_proxy/tree, nbdime/index, scrolldown, nbextensions dashboard tab, toggle all line numbers)
+    - ![](images/12.png)
+    - ![](images/13.jpg)
 15. Jupyter lab setup
     - Extensions (debugger, github, jupyterlab-manager, toc, jupyterlab_spellchecker, nbdime-jupyterlab)
     - Settings
