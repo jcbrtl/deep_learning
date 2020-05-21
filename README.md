@@ -6,6 +6,9 @@
 
 ## What's New
 
+### May 22, 2020
+* Organized repo
+
 ### May 5, 2020
 * Created the repo
 * Migrated notes repo
@@ -17,8 +20,12 @@
 
 ## TODO
 - [ ] Copy personal notes
-- [ ] Sort content in TODO folder
+- [x] Sort content in TODO folder
 - [ ] Add documentation for unscramble game
+- [ ] Update README of paper_implementations
+- [ ] Update README of notes
+- [ ] Add scanned copy of personal notes
+- [ ] Organize home page README
 
 ## Repository Structure
 This repository is built using [nbdev](https://nbdev.fast.ai/). The library folder is `dl` nothing important will be done here. Also, the notebooks folder is `deep_learning/nbs`.
@@ -34,19 +41,30 @@ This repository is built using [nbdev](https://nbdev.fast.ai/). The library fold
         
         Based on the above syntax every notebook has a filename that corresponds to some folder in the original `deep_learning` folder.
 
-    2. [notes](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/notes) - Check the [README.md](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/notes/README.md) of this folder for more details. It contains detailed lesson notes of fastai courses (dl1 2020) + personal scanned notes.
-        1. Courses covered
+    2. [notes](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/notes) - Check the [README.md](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/notes/README.md) of this folder for more details. It contains detailed lesson notes of fastai courses (dl1 2020) + personal notes of library documentation + personal scanned notes.
+        * [dl1_2020](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/notes/dl1_2020) -> Notes for **Deep Learning for Coders 2020**.
             - Deep Learning for Coders 2020
-        2. Personal notes
+        2. [books_libraries](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/notes/books_libraries) -> Notes for Python, Cython, Dask, matplotlib, PIL, Seaborn, Xarray, PyTorch, fastai, Scipy lecture Notes, Think Stats.
     
     3. [projects](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/projects) - Paper implementations are not included in this folder.
         1. [Semi-supervised parking lot detection](https://github.com/KushajveerSingh/Unsupervised-Parking-Lot-Detection/tree/00309fecf2acf29e5ad81ead8f595b06c7c1208d) -> my submission for Techgig Code Gladiators 2019 AI theme final.
         2. [Waste Seggregation using trashnet](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/projects/Waste%20Seggregation%20using%20trashnet) -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
     
-    4. [paper_implementations](https://github.com/KushajveerSingh/SPADE-PyTorch)-
-        1. [Photorealistic Style Transfer](https://github.com/KushajveerSingh/Photorealistic-Style-Transfer/tree/6c9c90fa9610117b8ad85aaec801ca1b020421c2) - Implementation of **High Resolution Network for Photorealistic Style Transfer** [link](https://arxiv.org/abs/1904.11617)
-        2. [SPADE-PyTorch](https://github.com/KushajveerSingh/SPADE-PyTorch/tree/8e367f9015122c627d95f3fa339182dd4a47715f) - Implementation of **Semantic Image Synthesis with Spatially-Adaptive Normalization (SPADE)** [link](https://arxiv.org/abs/1903.07291)
-    
+    4. [paper_implementations](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations)- See [README](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/README.md) for more details.
+        1. [Photorealistic Style Transfer](https://github.com/KushajveerSingh/Photorealistic-Style-Transfer/tree/6c9c90fa9610117b8ad85aaec801ca1b020421c2) - Implementation of **High Resolution Network for Photorealistic Style Transfer** [paper_link](https://arxiv.org/abs/1904.11617)
+        2. [SPADE-PyTorch](https://github.com/KushajveerSingh/SPADE-PyTorch/tree/8e367f9015122c627d95f3fa339182dd4a47715f) - Implementation of **Semantic Image Synthesis with Spatially-Adaptive Normalization (SPADE)** [paper_link](https://arxiv.org/abs/1903.07291)
+        3. [Weight Standardization: A New Normalization in town](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Weight%20Standardization:%20A%20New%20Normalization%20in%20town) - Implementation of **Weight Standardization** [paper_link](https://arxiv.org/abs/1903.10520). Tested using cyclic learning.
+        4. [Training AlexNet with tips and checks on how to train CNNs](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Training%20AlexNet%20with%20tips%20and%20checks%20on%20how%20to%20train%20CNNs) - A PyTorch tutorial on how to create an image classifier.
+        5. [SOTA Techniques in Deep Learning](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/SOTA%20Techniques%20in%20Deep%20Learning) - A repository containing a summary of the SOTA techniques in various field.
+            - Mish
+            - Multi Sample Dropout
+        6. [Study of Mish activation function in transfer learning with code and discussion](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Study%20of%20Mish%20activation%20function%20in%20transfer%20learning%20with%20code%20and%20discussion) - Implementation of **Mish: A Self Regularized Non-Monotonic Neural Activation Function** [paper_link](https://arxiv.org/abs/1908.08681).
+        7. [Number of bins of a Histogram](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Number%20of%20bins%20of%20a%20Histogram) - A short notebook discussing three techniques of choosing the bin size in histograms.
+        8. [Multi Sample Dropout](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Multi%20Sample%20Dropout) - Implementation of **Multi-Sample Dropout for Accelerated Training and Better Generalization** [paper_link](https://arxiv.org/abs/1905.09788).
+        9. [Data Augmentation in Computer Vision](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Data%20Augmentation%20in%20Computer%20Vision) - Notebooks implementing single image data augmentation techniques using just Python and semi-supervised augmentation techniques.
+        10. [How to deal with outlier](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/How%20to%20deal%20with%20outliers) - A short notebook discussing ways to deal with outliers.
+        11. [Leslie N. Smith papers notebook](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/paper_implementations/Leslie%20N.%20Smith%20papers%20notebook) - Jupyter notebook discussing cyclic learning and ways by which we can choose hyperparameter values by looking at valid loss graph.
+         
     5. [random](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random) - Random scripts and os setup instructions.
         1. [os_setup_iinstructions](https://github.com/KushajveerSingh/deep_learning/tree/master/deep_learning/random/os_setup_instructions) -> guide to setup Windows10 pro and Ubuntu 20.04 LTS on my laptop according to my preferences
         2. [cifar10_data_script.py](https://github.com/KushajveerSingh/deep_learning/blob/master/deep_learning/random/cifar10_data_script.py) -> to convert CIFAR10 to numpy array
