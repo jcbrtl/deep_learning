@@ -1,5 +1,5 @@
 # Deep Learning
-> Collection of all my work related to deep learning in a single place.
+> Collection of my work related to deep learning in a single place.
 
 [https://kushajveersingh.github.io/blog/](https://kushajveersingh.github.io/blog/)
 
