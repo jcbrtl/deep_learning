@@ -8,7 +8,7 @@
 1. [projects](projects)
 
     1. [Semi-supervised parking lot detection](https://github.com/KushajveerSingh/Unsupervised-Parking-Lot-Detection) -> My submission for Techgig Code Gladiators 2019 AI theme competition that won 1st place at the final.
-    2. [Waste Seggregation using trashnet](projects/Waste_%20_Seggregation_using_trashnet) -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
+    2. [Waste Seggregation using trashnet](projects/Waste_Seggregation_using_trashnet) -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
 
 2. [paper_implementations](paper_implementations)
 
