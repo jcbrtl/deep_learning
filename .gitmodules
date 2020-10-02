@@ -1,9 +1,9 @@
-[submodule "deep_learning/projects/Unsupervised-Parking-Lot-Detection"]
-	path = deep_learning/projects/Unsupervised-Parking-Lot-Detection
+[submodule "projects/Unsupervised-Parking-Lot-Detection"]
+	path = projects/Unsupervised-Parking-Lot-Detection
 	url = git@github.com:KushajveerSingh/Unsupervised-Parking-Lot-Detection.git
-[submodule "deep_learning/paper_implementations/SPADE-PyTorch"]
-	path = deep_learning/paper_implementations/SPADE-PyTorch
+[submodule "paper_implementations/SPADE-PyTorch"]
+	path = paper_implementations/SPADE-PyTorch
 	url = git@github.com:KushajveerSingh/SPADE-PyTorch.git
-[submodule "deep_learning/paper_implementations/Photorealistic-Style-Transfer"]
-	path = deep_learning/paper_implementations/Photorealistic-Style-Transfer
+[submodule "paper_implementations/Photorealistic-Style-Transfer"]
+	path = paper_implementations/Photorealistic-Style-Transfer
 	url = git@github.com:KushajveerSingh/Photorealistic-Style-Transfer.git

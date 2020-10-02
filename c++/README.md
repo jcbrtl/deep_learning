@@ -1,1 +1,0 @@
-My main repo containing all the materials that I will be studying/using to become better at data structures and algorithms, focusing more on C++ than Python.
