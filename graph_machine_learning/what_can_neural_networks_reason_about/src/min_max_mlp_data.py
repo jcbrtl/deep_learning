@@ -5,11 +5,11 @@ from pytorch_lightning import LightningDataModule
 
 
 class MinMaxDiffDataset(Dataset):
-    """r
+    """
     Dataset for Maximum value difference problem as presented in the paper
     https://arxiv.org/abs/1905.13211.
     """
-    def __init__(self, num_samples: int, normalize: bool = False):
+    def __init__(self, num_samples: int):
         # 25 = num objects to sample
         # 8 = size of location vector
         # 1 = size of value vector
@@ -22,12 +22,6 @@ class MinMaxDiffDataset(Dataset):
             location = np.random.uniform(0, 20, size=(25, 8))
             value = np.random.randint(100, size=(25, 1))
             color = np.random.randint(1, 6, size=(25, 1))
-
-            if normalize:
-                location = np.divide(location, 20)
-                value = np.divide(value, 100)
-                color -= 1
-                color = np.divide(color, 5)
 
             min_val = np.min(value)
             max_val = np.max(value)
@@ -45,17 +39,15 @@ class MinMaxDiffDataset(Dataset):
 
 
 class MinMaxDiffModule(LightningDataModule):
-    def __init__(self, train_size=50000, val_size=5000, normalize=False):
+    def __init__(self, train_size=50000, val_size=5000):
         super().__init__()
         self.train_size = train_size
         self.val_size = val_size
-        self.normalize = normalize
 
     def setup(self, stage=None):
         if stage == "fit" or stage is None:
-            self.train_dataset = MinMaxDiffDataset(self.train_size,
-                                                   self.normalize)
-            self.val_dataset = MinMaxDiffDataset(self.val_size, self.normalize)
+            self.train_dataset = MinMaxDiffDataset(self.train_size)
+            self.val_dataset = MinMaxDiffDataset(self.val_size)
 
     def train_dataloader(self):
         return DataLoader(self.train_dataset,

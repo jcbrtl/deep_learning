@@ -1,19 +1,45 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import torch_geometric.nn as pyg_nn
 from pytorch_lightning import LightningModule
 from pytorch_lightning.metrics import Accuracy
 
 
-class GNN(nn.Module):
-    def __init__(self, depth=3):
+class GNN_Layer(pyg_nn.MessagePassing):
+    def __init__(self, in_features: int, out_features: int,
+                 hidden_mlp_dim: int = 256,
+                 aggr='add', num_mlp_layers: int = 3, **kwargs):
+        super().__init__(aggr, **kwargs)
+
+        layers = [
+            nn.Linear(in_features*2, hidden_mlp_dim),
+            nn.ReLU()
+        ]
+        for _ in range(num_mlp_layers-2):
+            layers.append(nn.Linear(hidden_mlp_dim, hidden_mlp_dim))
+            layers.append(nn.ReLU())
+        layers.append(nn.Linear(hidden_mlp_dim, out_features))
+
+        self.mlp = nn.Sequential(*layers)
+
+    def forward(self, x, edge_index):
+        return self.propagate(edge_index, x=x)
+
+    def message(self, x_i, x_j):
+        x = torch.cat((x_i, x_j), dim=-1)
+        return self.mlp(x)
+
+
+class GNN_Model(nn.Module):
+    def __init__(self, in_features: int = 10, hidden_dim: int = 256,
+                 num_layers: int = 4, num_classes: int = 101, **kwargs):
         super().__init__()
-        self.layers = nn.ModuleList([pyg_nn.GCNConv(10, 128)])
-        for _ in range(depth-2):
-            self.layers.append(pyg_nn.GCNConv(128, 128))
-        self.layers.append(pyg_nn.GCNConv(128, 128))
-        self.linear = nn.Linear(128, 101)
+        self.layers = nn.ModuleList()
+        self.layers.append(GNN_Layer(in_features, hidden_dim, **kwargs))
+        for _ in range(num_layers-1):
+            self.layers.append(GNN_Layer(hidden_dim, hidden_dim, **kwargs))
+
+        self.linear = nn.Linear(hidden_dim, num_classes)
 
     def forward(self, x, edge_index, batch):
         for i in range(len(self.layers)-1):
@@ -21,15 +47,17 @@ class GNN(nn.Module):
             x = x.relu()
         x = self.layers[-1](x, edge_index)
         x = pyg_nn.global_mean_pool(x, batch)
-        x = F.dropout(x, p=0.5, training=self.training)
+        # x = nn.functional.dropout(x, p=0.5, training=self.training)
         x = self.linear(x)
         return x
 
 
-class GNNModule(LightningModule):
-    def __init__(self, depth=3):
+class GNN_Module(LightningModule):
+    def __init__(self, in_features: int = 10, hidden_dim: int = 256,
+                 num_layers: int = 4, num_classes: int = 101, **kwargs):
         super().__init__()
-        self.model = GNN(depth)
+        self.model = GNN_Model(in_features, hidden_dim, num_layers,
+                               num_classes, **kwargs)
         self.loss = nn.CrossEntropyLoss()
         self.val_accuracy = Accuracy()
 
