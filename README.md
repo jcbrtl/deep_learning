@@ -5,12 +5,16 @@
 
 ## Repository Structure
 
-1. [projects](projects)
+1. [graph_machine_learning](graph_machine_learning)
+
+    1. [what_can_neural_networks_reason_about](graph_machine_learning/what_can_neural_networks_reason_about) - Implementation of paper [What can Neural Networks Reason About](https://arxiv.org/abs/1905.13211). Check my [blog post](https://kushajveersingh.github.io/blog/graph_machine_learning/2020/11/07/post-0013.html) for the paper summary. Results from one of the experiments presented in the paper are reproduced. [twitter-card](https://twitter.com/Kkushaj/status/1325445905554706434)
+
+2. [projects](projects)
 
     1. [Semi-supervised parking lot detection](https://github.com/KushajveerSingh/Unsupervised-Parking-Lot-Detection) -> My submission for Techgig Code Gladiators 2019 AI theme competition that won 1st place at the final.
     2. [Waste Seggregation using trashnet](projects/Waste_Seggregation_using_trashnet) -> Contains the code to train models for trashnet and then export them using ONNX. It was part of a bigger project where we ran these models on Rasberry Pi, which controlled wooden planks to classify the waste into different categories (code for rasberry pi not included here).
 
-2. [paper_implementations](paper_implementations)
+3. [paper_implementations](paper_implementations)
 
     1. [Photorealistic Style Transfer](https://github.com/KushajveerSingh/Photorealistic-Style-Transfer) - Implementation of [**High Resolution Network for Photorealistic Style Transfer**](https://arxiv.org/abs/1904.11617) 
     2. [SPADE-PyTorch](https://github.com/KushajveerSingh/SPADE-PyTorch) - Implementation of [**Semantic Image Synthesis with Spatially-Adaptive Normalization (SPADE)**](https://arxiv.org/abs/1903.07291)
@@ -23,7 +27,7 @@
     9.  [How to deal with outlier](paper_implementations/How%20to%20deal%20with%20outliers) - Notebook discussing ways to deal with outliers.
     10. [Leslie N. Smith papers notebook](paper_implementations/Leslie%20N.%20Smith%20papers%20notebook) - Jupyter notebook discussing cyclic learning and ways by which we can choose hyperparameter values by looking at valid loss graph.
         
-3. [notes](notes) - My notes when learning some things.
+4. [notes](notes) - My notes when learning some things.
 
    * [Cython](notes/cython.ipynb)
    * [dask](notes/dask.ipynb)
@@ -34,7 +38,7 @@
    * [xarray](notes/xarray.ipynb)
    * [Python](notes/Python) - Data model + James Powell talks
 
-4. [random](random) - Random scripts and os setup instructions.
+5. [random](random) - Random scripts and os setup instructions.
    
     1. [os_setup_instructions](random/os_setup_instructions) - My setup guide for Windows 10 and Ubuntu 20.04 (needs to be updated a bit).
     2. [cifar10_data_script.py](random/cifar10_data_script.py) - To convert CIFAR10 data to numpy array
